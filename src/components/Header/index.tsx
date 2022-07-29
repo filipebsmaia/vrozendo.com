@@ -4,6 +4,7 @@ import {
 } from './styles';
 
 const Header = (): JSX.Element => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const a = '';
 
   return (

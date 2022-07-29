@@ -20,6 +20,7 @@ import userflowImg from '@assets/userflow.png';
 import validacaoImg from '@assets/validacao.png';
 
 const NaMesa = (): JSX.Element => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const a = '';
 
   return (
