@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports  = {
+  compiler: {
+    styledComponents: true
+  },
+  pageExtensions: ['tsx', 'ts'],
   reactStrictMode: true,
   swcMinify: true,
 }
-
-module.exports = nextConfig
