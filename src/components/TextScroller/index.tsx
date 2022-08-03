@@ -35,13 +35,11 @@ const TextScroller = ({ className, qualities }: ITextScrollerProps): JSX.Element
     <ScrolableText className={className} borderSize={boxSize} size={qualities.length}>
       <span ref={parentRef}>
         {qualities.map((quality, i) => (
-          <>
-            <span
-              ref={(r) => { childrenRefs.current[i] = r!; }}
-              key={quality}
-            >{quality}
-            </span><br />
-          </>
+          <span
+            ref={(r) => { childrenRefs.current[i] = r!; }}
+            key={quality}
+          >{quality}<br />
+          </span>
         ))}
       </span>
     </ScrolableText>

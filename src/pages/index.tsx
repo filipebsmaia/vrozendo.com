@@ -17,7 +17,7 @@ const Home: NextPage<{a: string}> = () => (
         <h1>
           oi, me chamo vinicius e<br />
           {'sou '}
-          <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empatico', 'critico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexivel', 'facilitador', 'analitico']} />
+          <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico']} />
         </h1>
       </HomeSection>
       <AboutSection id="about">

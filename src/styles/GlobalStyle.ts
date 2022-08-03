@@ -5,8 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
- 
+    scroll-behavior: smooth; 
     font-family: 'Quicksand', sans-serif;
     scroll-margin-top: 118px;
   }
@@ -20,6 +19,15 @@ export default createGlobalStyle`
     font-size: 16px;
     color: ${(props) => props.theme.colors.textPrimary};
     background-color: ${(props) => props.theme.colors.backgroundPrimary};
+
+
+    @media (max-width: 1280px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   #__next {    

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import BaseContainer from '@components/BaseContainer';
 import { Link } from '@components/Link';
@@ -18,6 +18,7 @@ export const SlideTimeline = styled.ul`
   list-style: none;
   z-index: 10;
   
+  flex-wrap: wrap; // arrumar responsividade depois
   > li {
 
     & + li {
@@ -42,30 +43,41 @@ export const SlideTimelineItem = styled(Link)<ISlideTimelineItemProps>`
 
 `;
 
-export const SlidePage = styled.article`
+interface ISlidePageProps {
+  single?: boolean;
+}
+
+export const SlidePage = styled.article<ISlidePageProps>`
   position: relative;
   display: flex;
   flex-direction: row;
-  min-height: calc(100vh - 160px);
-  min-height: calc(100vh - 160px);
-  padding: 64px 0;
 
-  /* align-items: center; */
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 64px;
+  min-height: calc(100vh - 160px);
+  
+  @media(max-width: 600px) {
+    min-height: 0;
+  }
+
+  width: 100%;
   margin-top: 2rem;
+  
+  /* padding: 64px 0; */
+  /* align-items: center; */
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  /* gap: 64px; */
 
   > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-self: center; */
 
-    min-width: 320px;
-    max-width: 45%;
-    width: 45%;
-    /* height: 100%; */
+    /* ${(props) => !props.single && css`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      min-width: 320px;
+      max-width: 45%;
+      width: 45%;
+    `}
 
     &.center {
       align-items: center;
@@ -73,15 +85,8 @@ export const SlidePage = styled.article`
 
     &.right {
       align-items: flex-end;
-    }
+    } */
   }
-`;
-
-export const SlideTitle = styled.div`
-  position: sticky;
-  top: 50%;
-  margin-bottom: 25%;
-  align-self: baseline;
 
   h1 {
     font-size: 4rem;
@@ -91,9 +96,16 @@ export const SlideTitle = styled.div`
     margin-top: 1rem;
   }
 
+`;
+
+export const SlideTitle = styled.div`
+  /* position: sticky; */
+  top: 50%;
+  margin-bottom: 15%;
+  align-self: baseline;
+
   .highlight {
     color: ${(props) => props.theme.colors.textPrimary};
-
   }
 
   > ul {
@@ -131,15 +143,4 @@ export const AdventureChat = styled.div`
     transform: translateY(4px);
     margin-left: -30px;
   }
-`;
-
-export const RPGSessionsImage = styled.div`
-  /* height: 300vh; */
-  height: 1429px;
-  width: 100%;
-  background: url("/assets/rpg_sessions.png");
-  background-repeat: repeat-y;
-  background-position: right;
-  transform: translate3d(0, 0, 0);
-  
 `;

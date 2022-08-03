@@ -29,8 +29,9 @@ export const Nav = styled.nav`
   }
 
   > ul {
-    display: flex;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap; // arrumar responsividade depois
 
     > li {
       & + li {
