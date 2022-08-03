@@ -6,7 +6,7 @@ import ProjectContext from '@components/namesa/ProjectContext';
 import ProjectDescription from '@components/namesa/ProjectDescription';
 
 import {
-  Container, RPGSessionsImage, SlideTitle, SlidePage, SlideTimeline, SlideTimelineItem, AdventureContainer, AdventureChat
+  Container, SlideTitle, SlidePage, SlideTimeline, SlideTimelineItem
 } from './styles';
 
 import adventureImg from '@assets/adventure.png';
