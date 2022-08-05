@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   flex-wrap: wrap;
   gap: 64px;
+  
+  @media(max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   > div {    
     display: flex;
@@ -13,8 +19,6 @@ export const Container = styled.div`
     justify-content: center;
 
     min-width: 320px;
-    /* max-width: 45%; */
-    width: 45%;
   }
 `;
 

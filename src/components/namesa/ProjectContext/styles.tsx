@@ -1,22 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
   gap: 32px;
   
   @media(max-width: 1280px) {
+    display: flex;
     flex-direction: column;
   }
 `;
 
-interface IContentProps {
-  left?: number;
-}
-
-export const Content = styled.div<IContentProps>`
+export const Content = styled.div`
   position: sticky;
   top: 45%;
   /* bottom: 500px; */
@@ -27,16 +24,11 @@ export const Content = styled.div<IContentProps>`
     color: ${(props) => props.theme.colors.textPrimary};
   }
   
-  transition: all 0.25s ease-out;
-  transform: translateX(-200%);
-
-  /* transform: ${(props) => `translateX(${props.left}%)`}; */
-  
 
   @media(max-width: 1280px) {
     position: static;
     width: 100%;
-    transform: translateX(0);
+    margin-bottom: 0;
   }
 `;
 
@@ -60,10 +52,13 @@ export const RPGSessionsImageContainer = styled.div`
   }
   
 `;
+
 export const RPGSessionsImage = styled.div`
   margin-bottom: 1rem;
   height: 1200px;
   width: 420px;
+  float: right;
+
   background: url("/assets/namesa/rpg_sessions_vertical.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -72,22 +67,25 @@ export const RPGSessionsImage = styled.div`
   
   
   @media(max-width: 1280px) {
+    float: none;
     height: 300px;
     width: 1810px;
+
     background: url("/assets/namesa/rpg_sessions_horizontal.png");   
     background-repeat: no-repeat; 
     background-position: center;
     background-size: contain;
+  }
+  
     
-    @media(max-width: 600px) {
-      height: 200px;
-      width: 1202px;
-    }
+  @media(max-width: 600px) {
+    height: 200px;
+    width: 1202px;
+  }
 
-    @media(max-width: 400px) {
-      height: 160px;
-      width: 964px;
-    }
+  @media(max-width: 400px) {
+    height: 160px;
+    width: 964px;
   }
 
   

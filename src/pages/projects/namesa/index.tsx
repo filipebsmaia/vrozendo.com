@@ -4,6 +4,8 @@ import Image from '@components/Image';
 import PrepareToAdventureSlide from '@components/namesa/PrepareToAdventureSlide';
 import ProjectContext from '@components/namesa/ProjectContext';
 import ProjectDescription from '@components/namesa/ProjectDescription';
+import ProjectInsights from '@components/namesa/ProjectInsights';
+import ProjectLearning from '@components/namesa/ProjectLearning';
 
 import {
   Container, SlideTitle, SlidePage, SlideTimeline, SlideTimelineItem
@@ -92,15 +94,7 @@ const NaMesa = (): JSX.Element => {
       </SlidePage>
 
       <SlidePage id="todefine">
-        <SlideTitle>
-          <h1>Principais insights</h1>
-          <p>
-            Seguindo com os dados extraídos e analisados das pesquisas, tive três principais insights.
-          </p>
-        </SlideTitle>
-        <div className="right">
-          Insights aqui
-        </div>
+        <ProjectInsights />
       </SlidePage>
 
       <SlidePage>
@@ -224,6 +218,10 @@ const NaMesa = (): JSX.Element => {
 
       <SlidePage single>
         <PrepareToAdventureSlide />
+      </SlidePage>
+
+      <SlidePage single>
+        <ProjectLearning />
       </SlidePage>
 
     </Container>
