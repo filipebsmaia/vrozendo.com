@@ -1,10 +1,15 @@
 import React from 'react';
 
+import Image from '@components/Image';
+
 import {
-  Container, Content, RPGSessionsImage, RPGSessionsImageContainer
+  Container, Content, RPGSessionsImageContainer
 } from './styles';
 
-const ProjectContext = (): JSX.Element => (
+import mobileRPGImage from '@assets/rpg_sessions_horizontal.png';
+import desktopRPGImage from '@assets/rpg_sessions_vertical.png';
+
+const NamesaContext = (): JSX.Element => (
   <Container>
     <Content>
       <h1>Contexto</h1>
@@ -14,9 +19,21 @@ const ProjectContext = (): JSX.Element => (
       </p>
     </Content>
     <RPGSessionsImageContainer>
-      <RPGSessionsImage />
+      <Image
+        id="desktop"
+        src={desktopRPGImage}
+        alt=""
+        layout="responsive"
+      />
+
+      <Image
+        id="mobile"
+        src={mobileRPGImage}
+        alt=""
+        layout="responsive"
+      />
     </RPGSessionsImageContainer>
   </Container>
 );
 
-export default ProjectContext;
+export default NamesaContext;

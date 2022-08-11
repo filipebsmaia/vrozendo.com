@@ -4,7 +4,7 @@ import {
   Container, Content, InsightsContainer
 } from './styles';
 
-const ProjectInsights = (): JSX.Element => (
+const NamesaInsights = (): JSX.Element => (
   <Container>
     <Content>
       <h1>Principais insights</h1>
@@ -31,4 +31,4 @@ const ProjectInsights = (): JSX.Element => (
   </Container>
 );
 
-export default ProjectInsights;
+export default NamesaInsights;

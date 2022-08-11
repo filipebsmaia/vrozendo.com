@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   gap: 32px;
   
@@ -16,7 +16,6 @@ export const Container = styled.div`
 export const Content = styled.div`
   position: sticky;
   top: 45%;
-  /* bottom: 500px; */
   margin-bottom: 256px;
   max-width: 610px;
   
@@ -35,7 +34,9 @@ export const Content = styled.div`
 export const RPGSessionsImageContainer = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
-  
+  max-width: 610px;
+  width: 100%;
+  margin-left: auto;
   
   @media(max-width: 1280px) {
     width: 100%;
@@ -50,44 +51,27 @@ export const RPGSessionsImageContainer = styled.div`
     height: 6px;
     background: none;
   }
-  
-`;
 
-export const RPGSessionsImage = styled.div`
-  margin-bottom: 1rem;
-  height: 1200px;
-  width: 420px;
-  float: right;
-
-  background: url("/assets/namesa/rpg_sessions_vertical.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  
-  
-  @media(max-width: 1280px) {
-    float: none;
-    height: 300px;
-    width: 1810px;
-
-    background: url("/assets/namesa/rpg_sessions_horizontal.png");   
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: contain;
-  }
-  
+  > div {
+    margin-bottom: 1rem;
     
-  @media(max-width: 600px) {
-    height: 200px;
-    width: 1202px;
-  }
+    &#mobile {
+      display: none;    
+    }
 
-  @media(max-width: 400px) {
-    height: 160px;
-    width: 964px;
-  }
+    @media(max-width: 1280px) {
+      height: 300px;
+      width: 1810px;
+      
 
-  
+      &#desktop {
+        display: none;      
+      }
+
+      &#mobile {
+        display: block;      
+      }
+    }
+
+  }  
 `;
-

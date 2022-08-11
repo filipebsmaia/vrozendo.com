@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: center;
   width: 100%;
   gap: 32px;
   
@@ -15,6 +14,13 @@ export const Container = styled.div`
 
   > * {
     max-width: 610px;
+
+    &:first-child {
+      justify-self: left;
+    }
+    &:nth-child(2) {
+      justify-self: flex-end;
+    }
   }
 `;
 
@@ -26,19 +32,21 @@ export const Content = styled.div<IContentProps>`
   /* position: sticky; */
 `;
 
-export const InsightsContainer = styled.div`
+export const LearningContainer = styled.div`
   > ul {
     list-style: none;
-    color: #12121A;
     
     li {
-      background: ${(props) => props.theme.colors.textPrimary};
-      padding: 1rem;
       margin-top: 1rem;
     }
     
-    strong {
-      font-size: 3rem;
+    span {
+      font-size: 1rem;
+
+      &.highlight {
+        color: ${(props) => props.theme.colors.textPrimary};
+        margin-right: 0.25rem;
+      }
     }
   }
   

@@ -4,7 +4,7 @@ import {
   Container, Content, ThreeDimensionalAppView
 } from './styles';
 
-const ProjectDescription = (): JSX.Element => (
+const NamesaDescription = (): JSX.Element => (
   <Container>
     <ThreeDimensionalAppView title="Na mesa 3d" src="https://my.spline.design/namesa-6f6252899f7a37bd19f230135db99faa/" />
     <Content>
@@ -23,4 +23,4 @@ const ProjectDescription = (): JSX.Element => (
   </Container>
 );
 
-export default ProjectDescription;
+export default NamesaDescription;

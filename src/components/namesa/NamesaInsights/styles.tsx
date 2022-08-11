@@ -14,6 +14,15 @@ export const Container = styled.div`
 
   > * {
     max-width: 610px;
+    width: 100%;
+
+    &:first-child {
+      justify-self: left;
+    }
+    
+    &:nth-child(2) {
+      justify-self: flex-end;
+    }
   }
 `;
 
@@ -25,21 +34,19 @@ export const Content = styled.div<IContentProps>`
   /* position: sticky; */
 `;
 
-export const LearningContainer = styled.div`
+export const InsightsContainer = styled.div`
   > ul {
     list-style: none;
+    color: #12121A;
     
     li {
+      background: ${(props) => props.theme.colors.textPrimary};
+      padding: 1rem;
       margin-top: 1rem;
     }
     
-    span {
-      font-size: 1rem;
-
-      &.highlight {
-        color: ${(props) => props.theme.colors.textPrimary};
-        margin-right: 0.25rem;
-      }
+    strong {
+      font-size: 3rem;
     }
   }
   

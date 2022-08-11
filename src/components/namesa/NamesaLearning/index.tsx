@@ -4,7 +4,7 @@ import {
   Container, Content, LearningContainer
 } from './styles';
 
-const ProjectLearning = (): JSX.Element => (
+const NamesaLearning = (): JSX.Element => (
   <Container>
     <Content>
       <h1>Aprendizados</h1>
@@ -43,4 +43,4 @@ const ProjectLearning = (): JSX.Element => (
   </Container>
 );
 
-export default ProjectLearning;
+export default NamesaLearning;
