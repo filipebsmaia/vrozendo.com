@@ -27,21 +27,34 @@ export const Nav = styled.nav`
   strong {
     font-weight: 500;
   }
+  
+  @media(max-width: 640px) {    
+    > ul li {
+      display: none;    
+    }
+
+    a {
+      margin: 0 auto;
+    }
+  }
 
   > ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap; // arrumar responsividade depois
+    
 
     > li {
       & + li {
         margin-left: 40px;
-      }
+      }      
 
       span {
         font-weight: 500;
       }
     }
+
+    
   }
 `;
 

@@ -23,7 +23,6 @@ export const SlideTimeline = styled.ul`
       margin-left: 1rem;
     }
 
-
   }
 `;
 

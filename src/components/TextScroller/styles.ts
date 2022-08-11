@@ -12,8 +12,12 @@ export const ScrolableText = styled.div<ITextScrollerProps>`
   line-height: 1.6em;
   height: 1.6em;
   top: 0.45em;
-  width: 24rem;
-  font-size: 3.5rem;
+  width: 18rem;
+  font-size: 3rem;
+
+  @media(max-width: 580px) {
+    margin-top: -.45em;
+  }
 
   > span {
     transition: top 0.75s;

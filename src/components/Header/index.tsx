@@ -15,7 +15,7 @@ const Header = (): JSX.Element => {
         </NavItem>
         <ul>
           <li>
-            <NavItem selected href="/projects/namesa/#Namesas">projetos</NavItem>
+            <NavItem selected href="/#projects">projetos</NavItem>
           </li>
           <li>
             <NavItem href="/#about">sobre</NavItem>

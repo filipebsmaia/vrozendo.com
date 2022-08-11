@@ -5,7 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   width: 100%;
   min-height: calc(100vh - 100px);
-  padding: 50px 0;
+  padding: 32px 0;
 
   justify-content: center;
 `;

@@ -1,13 +1,16 @@
 
 import type { NextPage } from 'next';
 
+import { Link } from '@components/Link';
 import SEO from '@components/SEO';
 import TextScroller from '@components/TextScroller';
 
 import {
   AboutContent,
-  AboutSection, Container, HomeSection
+  AboutSection, ContactsSection, Container, HomeSection, ProjectCard, ProjectsList, ProjectsSection, ProjectsSectionHeader
 } from './styles';
+
+import NamesaLogo from '@assets/namesa_logo.svg';
 
 const Home: NextPage<{a: string}> = () => (
   <>
@@ -15,8 +18,8 @@ const Home: NextPage<{a: string}> = () => (
     <Container>
       <HomeSection id="home">
         <h1>
-          oi, me chamo vinicius e<br />
-          {'sou '}
+          oi, me chamo vinicius e
+          {' sou '}
           <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico']} />
         </h1>
       </HomeSection>
@@ -101,6 +104,38 @@ const Home: NextPage<{a: string}> = () => (
           </ul>
         </AboutContent>
       </AboutSection>
+      <ProjectsSection id="projects">
+        <ProjectsSectionHeader>
+          <ul>
+            <li>estudos</li>
+            <li>em andamento</li>
+          </ul>
+        </ProjectsSectionHeader>
+        <ProjectsList>
+          <ul>
+            <li>
+              <ProjectCard href="/projects/namesa">
+                <div className="foreground">
+                  <NamesaLogo />
+                </div>
+                <div className="hiddenground">
+                  <iframe title="Na mesa 3d" src="https://my.spline.design/namesa-6f6252899f7a37bd19f230135db99faa/" />
+                </div>
+              </ProjectCard>
+            </li>
+          </ul>
+        </ProjectsList>
+      </ProjectsSection>
+      <ContactsSection>
+        <ul>
+          <li>
+            <Link href="mailto:viniciusrozendo00@gmail.com">E-mail</Link>
+          </li>
+          <li>
+            <Link href="https://linkedin.com/in/viniciusrozendo">LinkedIn</Link>
+          </li>
+        </ul>
+      </ContactsSection>
     </Container>
 
   </>

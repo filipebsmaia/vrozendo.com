@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Image from '@components/Image';
 import NamesaChanges from '@components/namesa/NamesaChanges';
 import NamesaContext from '@components/namesa/NamesaContext';
 import NamesaDescription from '@components/namesa/NamesaDescription';
@@ -19,7 +18,7 @@ import NamesaValidation from '@components/namesa/NamesaValidation';
 import PrepareToAdventureSlide from '@components/namesa/PrepareToAdventureSlide';
 
 import {
-  Container, SlideTitle, SlidePage, SlideTimeline, SlideTimelineItem
+  Container, SlidePage, SlideTimeline, SlideTimelineItem
 } from './styles';
 
 const NaMesa = (): JSX.Element => {
