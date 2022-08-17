@@ -12,7 +12,7 @@ import {
 
 import NamesaLogo from '@assets/namesa_logo.svg';
 
-const Home: NextPage<{a: string}> = () => (
+const Home: NextPage<{ a: string }> = () => (
   <>
     <SEO title="home" />
     <Container>
@@ -20,7 +20,7 @@ const Home: NextPage<{a: string}> = () => (
         <h1>
           oi, me chamo vinicius e
           {' sou '}
-          <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico']} />
+          <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico', 'inovador']} />
         </h1>
       </HomeSection>
       <AboutSection id="about">
