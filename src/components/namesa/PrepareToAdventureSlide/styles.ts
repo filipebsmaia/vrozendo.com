@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  align-items: flex-end;
+  align-items: center;
   
 `;
 

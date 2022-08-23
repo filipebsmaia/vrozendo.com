@@ -27,13 +27,18 @@ export const AboutSection = styled(BaseSection)`
 `;
 
 interface IAboutContentProps {
-  row?: boolean;
+  divide?: boolean;
 }
 
 export const AboutContent = styled.div<IAboutContentProps>`
   display: flex;
-  flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-  padding: ${(props) => (!props.row && '40px 80px')};
+  flex-direction: ${(props) => (props.divide ? 'row' : 'column')};
+  
+  padding: 20px 36px;
+  
+  @media(max-width: 500px) {
+    padding: 16px 24px;
+  }
 
   @media(max-width: 640px) {
     flex-direction: column;
@@ -61,26 +66,30 @@ export const AboutContent = styled.div<IAboutContentProps>`
     color: ${(props) => props.theme.colors.backgroundPrimary};
   }
 
-  div.row {
+  div.divide {
     min-width: 100px;
-    gap: 2rem;
     display: flex;
-    flex-direction: ${(props) => (props.row ? 'row' : 'column')};
+    flex-direction: ${(props) => (props.divide ? 'row' : 'column')};
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    @media(max-width: 500px) {
+      flex-direction: column;
+
+      ul + ul {
+        margin-top: 0;
+      }
+    }
+
   }
 
   > div {
     flex: 1;
-    padding: ${(props) => (props.row && ' 40px 80px')};
 
-    & + div {
-      padding-right: 80px;
-      border-left: 1px solid ${(props) => props.theme.colors.textPrimary};
-      
-      @media(max-width: 640px) {
-        border-left: 0;
-      }
+    padding: 20px 0;
+    
+    @media(max-width: 500px) {
+      padding: 16px 0;
     }
   }
 `;

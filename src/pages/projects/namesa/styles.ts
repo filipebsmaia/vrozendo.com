@@ -11,10 +11,12 @@ export const Container = styled(BaseContainer)`
 
 export const SlideTimeline = styled.ul`
   position: sticky;
-  top: calc(40px + 100px);
+  top: calc(100px);
+  padding: 16px 0;
   display: flex;
   list-style: none;
   z-index: 10;
+  background: #12121A;
   
   flex-wrap: wrap; // arrumar responsividade depois
   > li {
