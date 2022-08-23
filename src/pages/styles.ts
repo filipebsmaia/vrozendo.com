@@ -33,7 +33,14 @@ interface IAboutContentProps {
 export const AboutContent = styled.div<IAboutContentProps>`
   display: flex;
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-  padding: ${(props) => (!props.row && '40px 80px')};
+  
+  @media(max-width: 1280px) {
+    padding: 20px 36px;
+  }
+  
+  @media(max-width: 500px) {
+    padding: 16px 24px;
+  }
 
   @media(max-width: 640px) {
     flex-direction: column;
@@ -63,16 +70,31 @@ export const AboutContent = styled.div<IAboutContentProps>`
 
   div.row {
     min-width: 100px;
-    gap: 2rem;
     display: flex;
     flex-direction: ${(props) => (props.row ? 'row' : 'column')};
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    @media(max-width: 500px) {
+      flex-direction: column;
+
+      ul + ul {
+        margin-top: 0;
+      }
+    }
+
   }
 
   > div {
     flex: 1;
-    padding: ${(props) => (props.row && ' 40px 80px')};
+
+    @media(max-width: 1280px) {
+      padding: 20px 0;
+    }
+    
+    @media(max-width: 500px) {
+      padding: 16px 0;
+    }
 
     & + div {
       padding-right: 80px;

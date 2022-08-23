@@ -3,10 +3,15 @@ import {
   Container, Nav, NavItem
 } from './styles';
 
-const Header = (): JSX.Element => {
+export type HeaderMenuSelected = 'projects' | 'about' | 'contacts';
+
+interface IHeaderProps {
+  selected?: HeaderMenuSelected;
+}
+
+const Header = ({ selected }: IHeaderProps): JSX.Element => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const a = '';
-
   return (
     <Container>
       <Nav>
@@ -15,13 +20,13 @@ const Header = (): JSX.Element => {
         </NavItem>
         <ul>
           <li>
-            <NavItem selected href="/#projects">projetos</NavItem>
+            <NavItem selected={selected === 'about'} href="/#about">sobre</NavItem>
           </li>
           <li>
-            <NavItem href="/#about">sobre</NavItem>
+            <NavItem selected={selected === 'projects'} href="/#projects">projetos</NavItem>
           </li>
           <li>
-            <NavItem href="/#contacs">contato</NavItem>
+            <NavItem selected={selected === 'contacts'} href="/#contacts">contato</NavItem>
           </li>
         </ul>
 

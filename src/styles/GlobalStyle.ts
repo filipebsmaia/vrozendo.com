@@ -7,7 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     scroll-behavior: smooth; 
     font-family: 'Quicksand', sans-serif;
-    scroll-margin-top: 118px;
+    scroll-margin-top: 160px;
   }
   html {
     
