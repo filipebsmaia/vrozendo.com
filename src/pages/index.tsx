@@ -72,17 +72,15 @@ const Home: NextPage<{a: string}> = () => {
             </p>
           </AboutContent>
 
-          <AboutContent row>
+          <AboutContent divide>
             <div>
               <h2>Softskills</h2>
-              <div className="row">
+              <div>
                 <ul>
                   <li>Comunicativo</li>
                   <li>Prestativo</li>
                   <li>Criativo</li>
                   <li>Colaborador</li>
-                </ul>
-                <ul>
                   <li>Critico</li>
                   <li>Positivo</li>
                   <li>Analitico</li>
