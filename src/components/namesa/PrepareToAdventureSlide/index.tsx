@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 
 import ImageComponent from '@components/Image';
+import { Link } from '@components/Link';
 
 import {
   AdventureChat, AppChatContainer, AppImage, Container, ImageContainer
@@ -73,7 +74,7 @@ const slidePageData = [
     text: (
       <>
         <span>Agora é sua hora de testar e observar com seus próprios olhos do que sou capaz!! Basta clickar no protótipo.</span><br />
-        <small> Clique para continuar.</small>
+        <Link href="https://figma.fun/fs2716" target="_blank"> <small> Acessar protótipo</small> </Link>
       </>
     ),
     image: '/assets/namesa/loading.gif'
