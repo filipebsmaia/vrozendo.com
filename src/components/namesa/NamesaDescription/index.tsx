@@ -14,7 +14,7 @@ const NamesaDescription = (): JSX.Element => (
         O namesa foi pensado para solucionar esse problema.
       </p>
       <p>
-        <strong>Tipo: </strong><span> Estudo de caso</span>
+        <strong>Tipo: </strong><span> Case Study</span>
       </p>
       <p>
         <strong>Duração: </strong><span> 2 semanas</span>
