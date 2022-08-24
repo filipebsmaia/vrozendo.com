@@ -19,7 +19,7 @@ export const Container = styled.div`
     }
     
     &:nth-child(2) {
-      justify-self: flex-end;
+      justify-self: center;
     }
   }
 `;

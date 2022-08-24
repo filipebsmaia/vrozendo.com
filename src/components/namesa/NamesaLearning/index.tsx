@@ -9,7 +9,7 @@ const NamesaLearning = (): JSX.Element => (
     <Content>
       <h1>Aprendizados</h1>
       <p>
-        Esse foi meu primeiro projeto de UX e nossa tive aprendizados de sobra sendo os principais:
+        Esse foi meu &quot;primeiro&quot; projeto como product designer e tive aprendizados de sobra sendo os principais:
       </p>
     </Content>
     <LearningContainer>

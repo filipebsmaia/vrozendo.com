@@ -11,7 +11,7 @@ const NamesaUserflow = (): JSX.Element => (
     <div>
       <h1>Userflow</h1>
       <p>
-        Já com a solução em mente, comecei a fazer o userflow para que ficasse visível o que seria necessário ter no aplicativo e qual seria o caminho percorrido pelo usuário.
+        Bom a solução está definida, então comecei a criar o userflow para que ficasse visível o que seria necessário ter no aplicativo e qual seria o caminho percorrido pelo usuário.
       </p>
     </div>
     <Image src={userflowImg} alt="" />

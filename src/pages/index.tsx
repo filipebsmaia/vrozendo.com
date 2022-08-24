@@ -17,7 +17,7 @@ import {
 
 import NamesaLogo from '@assets/namesa_logo.svg';
 
-const Home: NextPage<{a: string}> = () => {
+const Home: NextPage<{ a: string }> = () => {
   const [selectedMenu, setSelectedMenu] = useState<HeaderMenuSelected | undefined>();
   const homeRef = useRef<HTMLElement>(null);
   const aboutRef = useRef<HTMLElement>(null);
@@ -52,14 +52,14 @@ const Home: NextPage<{a: string}> = () => {
           <h1>
             oi, me chamo vinicius e
             {' sou '}
-            <TextScroller qualities={['comunicativo', 'prestativo', 'criativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico']} />
+            <TextScroller qualities={['criativo', 'prestativo', 'comnunicativo', 'colaborador', 'empático', 'crítico', 'positivo', 'seguro', 'motivado', 'assertivo', 'flexível', 'facilitador', 'analítico', 'simples', 'moderno', 'dinâmico']} />
           </h1>
         </HomeSection>
         <AboutSection id="about" ref={aboutRef}>
           <AboutContent>
-            <h2>Quem é Vinicius?</h2>
+            <h2>Sobre</h2>
             <p>
-              <strong>Vinicius Rozendo Maia</strong> é um Feirense amante de design e musica que nas horas vagas cria com sua irmã looks, videos, pinturas e varias outras artes
+              Um amante de tecnologia, inovação e claro RPGs de mesa. Esse sou eu um designer que usa do design e suas vertentes para criar soluções viáveis, criativas e acessíveis!
             </p>
           </AboutContent>
 
@@ -80,11 +80,13 @@ const Home: NextPage<{a: string}> = () => {
                   <li>Comunicativo</li>
                   <li>Prestativo</li>
                   <li>Criativo</li>
+                  <li>Metodologias Ágeis</li>
                   <li>Colaborador</li>
-                  <li>Critico</li>
+                  <li>Crítico</li>
                   <li>Positivo</li>
-                  <li>Analitico</li>
-                  <li>Flexivel</li>
+                  <li>Analítico</li>
+                  <li>Flexível</li>
+                  <li>Decision Making</li>
                 </ul>
               </div>
             </div>
@@ -95,7 +97,14 @@ const Home: NextPage<{a: string}> = () => {
                 <li>Design Thinking</li>
                 <li>UX Reseacher</li>
                 <li>UX/UI Designer</li>
-                <li>Metodologias agéis</li>
+                <li>Web/Mobile Design</li>
+                <li>Prototipação</li>
+                <li>Testes de Usabilidade</li>
+                <li>3D Design</li>
+                <li>Design de Integração</li>
+                <li>Figma</li>
+                <li>HTML e CSS Básico</li>
+                <li>Adobe Creative Cloud</li>
               </ul>
             </div>
           </AboutContent>
@@ -121,7 +130,7 @@ const Home: NextPage<{a: string}> = () => {
                 <p>
                   <strong>Stephany Falcão Fotografia</strong> <br />
                   <span>Editor de fotos</span> <br />
-                  <span>dez 2019 - mar 2020</span>
+                  <span>dez 2019 - set 2020</span>
                 </p>
               </li>
               <li>

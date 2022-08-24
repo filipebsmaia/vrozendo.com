@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
   > * {
-    max-width: 610px;
+    max-width: 630px;
 
     &:first-child {
       justify-self: left;

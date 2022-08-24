@@ -5,12 +5,12 @@ import { Container } from './styles';
 const NamesaIdeas = (): JSX.Element => (
   <Container>
     <div>
-      <h1>Ideias</h1>
+      <h1>Possíveis soluções</h1>
       <p>
-        Tendo em vista solucionar esse problema tive como primeira solução;
-        <strong>A criação de um local onde as pessoas possam se encontrar para jogar </strong>
-        e pagar pelo espaço, mas a ideia foi descartada pela sua viabilidade de local, deslocamento e dificuladde do dia a dia.
-        Sendo à segunda um aplicativo no qual as pessoas podem conhecer outros jogadores com o mesmo interesse.
+        Tendo em vista as oportunidades trazidas pela jornada tive como primeira ideia: <br />
+        <strong className="highlight"> A criação de um local onde as pessoas possam se encontrar para jogar e pagar pelo espaço</strong>
+        , mas a ideia foi descartada pela necessidade de verificar a viabilidade de local, deslocamento e dificuladde do dia a dia.
+        Sendo à segunda <strong className="highlight">um aplicativo no qual as pessoas podem conhecer outros jogadores com o mesmo interesse.</strong>
       </p>
     </div>
   </Container>

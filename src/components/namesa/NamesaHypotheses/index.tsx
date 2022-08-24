@@ -11,7 +11,7 @@ const NamesaHypotheses = (): JSX.Element => (
     <div>
       <h1>Hipóteses</h1>
       <p>
-        Após o primeiro insight comecei a cogitar hipóteses as quais utilizei da pesquisa quantitativa e qualitativa para poder verificar sua veracidade:
+        Após o primeiro insight comecei a cogitar hipóteses as quais utilizei de desk reseach, pesquisa quantitativa e qualitativa para poder verificar sua veracidade:
       </p>
     </div>
     <div>

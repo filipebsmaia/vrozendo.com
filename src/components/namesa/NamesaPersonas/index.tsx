@@ -10,7 +10,7 @@ const NamesaPersonas = (): JSX.Element => (
     <div>
       <h1>Personas</h1>
       <p>
-        Tendo em vista tudo até então recolhido e verificado, montei 2 personas com os perfis mais próximos dos entrevistados e usuários para qual eu estava buscando a solução
+        Tendo em vista tudo até então recolhido e verificado,foi necessário montar 2 personas pois foi observado 2 padrões de usuário sendo eles:
       </p>
     </div>
     <div>

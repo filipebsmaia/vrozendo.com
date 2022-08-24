@@ -13,44 +13,77 @@ import triangleImg from '@assets/triangle.png';
 
 const slidePageData = [
   {
-    text: 'Agora chegou o meu momento!',
-    image: '/assets/namesa/loading.gif'
-  },
-  {
     text: (
       <>
-        <span>Está preparado para se aventurar? </span><br />
-        <span>Eu o grande mago Namesa estou  aqui para te ajudar.</span>
+        <span>Agora chegou o meu momento!</span><br />
+        <small>Clique para continuar.</small>
       </>
     ),
     image: '/assets/namesa/loading.gif'
   },
   {
-    text: 'Derrote dragões, descubra tesouros no egito antigo, explore o universo, crie e participe de aventuras com outros aventureiros.',
+    text: (
+      <>
+        <span>Está preparado para se aventurar? </span>
+        <span>Eu o grande mago Namesa estou  aqui para te ajudar.</span><br />
+        <small>Clique para continuar.</small>
+      </>
+    ),
+    image: '/assets/namesa/loading.gif'
+  },
+  {
+    text: (
+      <>
+        <span>Derrote dragões, descubra tesouros no egito antigo </span>
+        <span>explore o universo, crie e participe de aventuras com outros aventureiros.</span><br />
+        <small> Clique para continuar.</small>
+      </>
+    ),
     image: '/assets/namesa/app_home.png'
   },
   {
-    text: 'Encontre outros que querem criar momentos com você, todos aqui querem se aventurar.',
+    text: (
+      <>
+        <span>Encontre outros que querem criar momentos com </span>
+        <span>você, todos aqui querem se aventurar.</span><br />
+        <small> Clique para continuar.</small>
+      </>
+    ),
     image: '/assets/namesa/app_profile.png'
   },
   {
-    text: 'Tire suas duvidas comigo! O grande mago, entenda como jogar, se preparar e se divertir!',
+    text: (
+      <>
+        <span>Tire suas duvidas comigo! O grande mago, entenda como jogar, se preparar e se divertir!</span><br />
+        <small> Clique para continuar.</small>
+      </>
+    ),
     image: '/assets/namesa/app_faq.png'
   },
   {
-    text: 'Sabe aquele momento épico em que você e seus companheiros derrotaram um dragão? Relembre seus companheiros dele.',
+    text: (
+      <>
+        <span>Sabe aquele momento épico em que você e seus companheiros derrotaram um dragão? Relembre seus companheiros dele.</span><br />
+        <small> Clique para continuar.</small>
+      </>
+    ),
     image: '/assets/namesa/app_timeline.png'
   },
   {
-    text: 'Agora é sua hora de testar e observar com seus próprios olhos do que sou capaz!! Basta clickar no protótipo.',
+    text: (
+      <>
+        <span>Agora é sua hora de testar e observar com seus próprios olhos do que sou capaz!! Basta clickar no protótipo.</span><br />
+        <small> Clique para continuar.</small>
+      </>
+    ),
     image: '/assets/namesa/loading.gif'
   }
 ];
 
-interface IPrepareToAdventureSlideProps {}
+interface IPrepareToAdventureSlideProps { }
 
 // eslint-disable-next-line no-empty-pattern
-const PrepareToAdventureSlide = ({}: IPrepareToAdventureSlideProps): JSX.Element => {
+const PrepareToAdventureSlide = ({ }: IPrepareToAdventureSlideProps): JSX.Element => {
   const [page, setPage] = useState(0);
 
   const nextPage = useCallback(() => {

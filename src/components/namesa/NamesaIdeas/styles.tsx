@@ -18,5 +18,8 @@ export const Container = styled.div`
     &:first-child {
       justify-self: left;
     }
+    .highlight {
+      color: ${(props) => props.theme.colors.textPrimary};
+    }
   }
 `;

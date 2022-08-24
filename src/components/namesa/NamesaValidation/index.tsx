@@ -11,7 +11,7 @@ const NamesaValidation = (): JSX.Element => (
     <div>
       <h1>Validação</h1>
       <p>
-        Utilizando da pesquisa quantitativa e qualitativa para poder verificar sua veraciade, foi possivel validar que:
+        Com o resultado das pesquisas foi obtido o seguinte resultado:
       </p>
     </div>
     <div>

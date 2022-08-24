@@ -9,7 +9,7 @@ const NamesaInsights = (): JSX.Element => (
     <Content>
       <h1>Principais insights</h1>
       <p>
-        Seguindo com os dados extraídos e analisados das pesquisas, tive três principais insights.
+        Seguindo com os dados extraídos e analisados, tive três principais insights sendo eles:
       </p>
     </Content>
     <InsightsContainer>

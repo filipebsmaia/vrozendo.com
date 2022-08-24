@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  /* flex-wrap: wrap; */
   gap: 64px;
   
   @media(max-width: 1280px) {
@@ -17,12 +19,15 @@ export const Container = styled.div`
     justify-content: center;
 
     min-width: 320px;
+    &:first-child{
+      max-width: 610px;
+    }
   }
 `;
 
 export const ImageContainer = styled.div`
   align-items: center;
-  
+
 `;
 
 export const AppChatContainer = styled.div`
