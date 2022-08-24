@@ -146,7 +146,7 @@ const Home: NextPage<{ a: string }> = () => {
         <ProjectsSection id="projects" ref={projectsRef}>
           <ProjectsSectionHeader>
             <ul>
-              <li>estudos</li>
+              <li>concluído</li>
               <li>em andamento</li>
             </ul>
           </ProjectsSectionHeader>
